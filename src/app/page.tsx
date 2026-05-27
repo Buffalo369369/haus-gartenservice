@@ -14,10 +14,10 @@ import {
   ShieldCheck,
   Sparkles,
   Leaf,
+  ImageIcon,
 } from "lucide-react";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-
 
 export default function Home() {
   const { scrollY } = useScroll();
@@ -49,8 +49,21 @@ const [menuOpen, setMenuOpen] = useState(false);
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[65%_center] md:object-center"
+            className="
+
+  object-cover
+
+  object-[65%_center]
+
+  md:object-center
+
+  brightness-[0.7]
+
+  saturate-[0.8]
+
+"
           />
+          <div className="absolute inset-0 bg-black/45" />
           
 
          {/* DARK OVERLAY */}
@@ -229,7 +242,7 @@ rel="noopener noreferrer"
 
 >
 
-  Galerie
+  Vorher & Nachher
 
 </a>
 
@@ -521,7 +534,7 @@ rel="noopener noreferrer"
               Unsere Leistungen
             </p>
 
-            <h2 className="text-5xl font-bold text-black">
+            <h2 className="text-4xl md:text-5xl font-bold text-black">
               Professioneller Service
               für Haus & Garten
             </h2>
@@ -669,7 +682,7 @@ rel="noopener noreferrer"
         Vorher & Nachher
       </p>
 
-      <h2 className="text-5xl font-bold text-black">
+      <h2 className="text-4xl md:text-5xl font-bold text-black">
         Sichtbare Ergebnisse
       </h2>
 
@@ -833,11 +846,67 @@ rel="noopener noreferrer"
 
       </div>
 
+      <div className="mt-16 flex justify-center">
+
+  <a
+    href="/galerie"
+    className="
+      group
+      relative
+      inline-flex
+      items-center
+      gap-3
+      overflow-hidden
+      rounded-2xl
+      bg-[#84c225]
+      px-8
+      py-5
+      text-lg
+      font-semibold
+      text-black
+      shadow-[0_10px_35px_rgba(132,194,37,0.35)]
+      transition-all
+      duration-300
+      hover:scale-[1.04]
+      hover:shadow-[0_15px_45px_rgba(132,194,37,0.5)]
+    "
+  >
+
+    {/* LIGHT EFFECT */}
+    <span
+      className="
+        absolute
+        inset-0
+        -translate-x-full
+        bg-gradient-to-r
+        from-transparent
+        via-white/30
+        to-transparent
+        transition-transform
+        duration-700
+        group-hover:translate-x-full
+      "
+    />
+
+    {/* ICON */}
+    <ImageIcon className="relative" size={22} />
+
+    {/* TEXT */}
+    <span className="relative">
+      Galerie ansehen
+    </span>
+
+  </a>
+
+</div>
+
     </div>
 
   </div>
 
 </section>
+
+
 
 {/* ÜBER UNS */}
 <section
@@ -883,7 +952,7 @@ rel="noopener noreferrer"
 ">
 
           <Image
-            src="/maschine.jpg"
+            src="/maschinen.jpg"
             alt="Gartenservice Technik"
             width={500}
             height={400}
@@ -973,7 +1042,7 @@ rel="noopener noreferrer"
       Über Uns
     </p>
 
-    <h2 className="text-5xl font-bold leading-tight text-black">
+    <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black">
       Persönlicher Service
       mit Leidenschaft
     </h2>
@@ -986,6 +1055,31 @@ rel="noopener noreferrer"
 
   </div>
 
+  
+
+
+
+  {/* DESKTOP TEXT */}
+<div className="hidden lg:block">
+
+  <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#84c225]">
+    Über Uns
+  </p>
+
+  <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black">
+    Persönlicher Service
+    mit Leidenschaft
+  </h2>
+
+  <p className="mt-8 text-lg leading-relaxed text-gray-600">
+    Haus & Gartenservice Vitalij Lind steht für
+    saubere Arbeit, Zuverlässigkeit und schnelle
+    Terminvergabe in Bad Hersfeld und Umgebung.
+  </p>
+
+</div>
+
+{/* DESKTOP FEATURES */}
 <div className="hidden lg:block mt-10 space-y-5">
 
   <div className="flex items-start gap-4">
@@ -1011,62 +1105,39 @@ rel="noopener noreferrer"
 
 </div>
 
-  {/* DESKTOP TEXT */}
-  <div className="hidden lg:block">
-
-    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#84c225]">
-      Über Uns
-    </p>
-
-    <h2 className="text-5xl font-bold leading-tight text-black">
-      Persönlicher Service
-      mit Leidenschaft
-    </h2>
-
-    <p className="mt-8 text-lg leading-relaxed text-gray-600">
-      Haus & Gartenservice Vitalij Lind steht für
-      saubere Arbeit, Zuverlässigkeit und schnelle
-      Terminvergabe in Bad Hersfeld und Umgebung.
-    </p>
-
-  </div>
-
-
-        
-        {/* DESKTOP BUTTON */}
-
-<div className="hidden lg:block">
+{/* DESKTOP BUTTON */}
+<div className="hidden lg:block mt-12">
 
   <a
-          href="https://wa.me/491606094947"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-            mt-12
-            inline-flex
-            items-center
-            gap-3
-            rounded-2xl
-            bg-[#84c225]
-            px-8
-            py-5
-            text-lg
-            font-semibold
-            text-black
-            shadow-[0_10px_35px_rgba(132,194,37,0.35)]
-            transition
-            hover:scale-[1.03]
-            hover:bg-[#96d92b]
-          "
-        >
+    href="https://wa.me/491606094947"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      mt-12
+      inline-flex
+      items-center
+      gap-3
+      rounded-2xl
+      bg-[#84c225]
+      px-8
+      py-5
+      text-lg
+      font-semibold
+      text-black
+      shadow-[0_10px_35px_rgba(132,194,37,0.35)]
+      transition
+      hover:scale-[1.03]
+      hover:bg-[#96d92b]
+    "
+  >
 
-          <FaWhatsapp size={24} />
+    <FaWhatsapp size={24} />
 
-          WhatsApp Anfrage
+    WhatsApp Anfrage
 
-        </a>
+  </a>
 
-        </div>
+</div>
 
       </div>
 
