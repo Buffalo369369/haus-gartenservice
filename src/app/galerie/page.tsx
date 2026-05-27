@@ -1,8 +1,11 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 export default function GaleriePage() {
   return (
-    <main className="min-h-screen bg-[#f8faf5] py-24">
+    <main className="min-h-screen bg-[#f8faf5] pt-32 pb-24">
+
+      <Navbar />
 
       <div className="container-custom">
 
@@ -47,20 +50,34 @@ export default function GaleriePage() {
             >
 
               <Image
-                src={img}
-                alt="Galerie Bild"
-                width={900}
-                height={700}
-                className="
-                  h-[320px]
-                  w-full
-                  object-cover
-                  transition
-                  duration-500
-                  hover:scale-105
-                "
-              />
 
+  src={img}
+
+  alt="Galerie Bild"
+
+  width={900}
+
+  height={700}
+
+  loading={index === 0 ? "eager" : "lazy"}
+
+  className="
+
+    h-[320px]
+
+    w-full
+
+    object-cover
+
+    transition
+
+    duration-500
+
+    hover:scale-105
+
+  "
+
+/>
             </div>
 
           ))}

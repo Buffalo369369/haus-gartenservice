@@ -1147,6 +1147,157 @@ rel="noopener noreferrer"
 
 </section>
 
+{/* FOOTER */}
+<footer className="bg-[#111111] text-white">
+
+  <div className="container-custom py-20">
+
+    <div className="flex flex-col items-center text-center">
+
+      {/* LOGO */}
+      <Image
+
+  src="/logo.png"
+
+  alt="Haus & Gartenservice Vitalij Lind"
+
+  width={260}
+
+  height={180}
+
+  style={{ height: "auto" }}
+
+  className="w-[180px] md:w-[240px]"
+
+/>
+
+      {/* TEXT */}
+      <p className="mt-6 max-w-xl text-gray-400 leading-relaxed">
+        Professioneller Haus- & Gartenservice
+        in Bad Hersfeld und Umgebung.
+        Schnell, zuverlässig und sauber.
+      </p>
+
+      {/* BUTTONS */}
+      <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+
+        {/* WHATSAPP */}
+        <a
+          href="https://wa.me/491606094947"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            inline-flex
+            items-center
+            justify-center
+            gap-3
+            rounded-2xl
+            bg-[#84c225]
+            px-8
+            py-4
+            font-semibold
+            text-black
+            shadow-[0_10px_35px_rgba(132,194,37,0.35)]
+            transition
+            hover:scale-[1.03]
+            hover:bg-[#96d92b]
+          "
+        >
+
+          <FaWhatsapp size={22} />
+
+          WhatsApp
+
+        </a>
+
+        {/* EMAIL */}
+        <a
+          href="mailto:info@vitalij-lind.de"
+          className="
+            inline-flex
+            items-center
+            justify-center
+            gap-3
+            rounded-2xl
+            border
+            border-white/10
+            bg-white/5
+            px-8
+            py-4
+            font-semibold
+            text-white
+            transition
+            hover:bg-white/10
+          "
+        >
+
+          ✉️ E-Mail schreiben
+
+        </a>
+
+      </div>
+
+      {/* PHONE */}
+      <a
+        href="tel:01606094947"
+        className="
+          mt-10
+          text-2xl
+          font-bold
+          text-[#84c225]
+          transition
+          hover:text-[#96d92b]
+        "
+      >
+        0160 6094947
+      </a>
+
+      {/* BOTTOM */}
+      <div className="mt-14 w-full border-t border-white/10 pt-8">
+
+        <div className="
+          flex
+          flex-col
+          items-center
+          justify-between
+          gap-4
+          text-sm
+          text-gray-500
+          md:flex-row
+        ">
+
+          <p>
+            © 2025 Vitalij Lind. Alle Rechte vorbehalten.
+          </p>
+
+          <div className="flex items-center gap-6">
+
+            <a
+              href="/impressum"
+              className="transition hover:text-white"
+            >
+              Impressum
+            </a>
+
+            <a
+              href="/datenschutz"
+              className="transition hover:text-white"
+            >
+              Datenschutz
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
     </main>
   );
 }
