@@ -491,7 +491,7 @@ opacity="0.9"
                   Haus & Gartenservice
 
                   <span className="block text-[#84c225]">
-                    für Bad Hersfeld
+                    für Bad Hersfeld und Umgebung
                   </span>
 
                 </h1>
@@ -1343,7 +1343,7 @@ rel="noopener noreferrer"
         ">
 
           <p>
-            © 2025 Vitalij Lind. Alle Rechte vorbehalten.
+            © 2025 Haus- & Gartenservice Vitalij Lind. Alle Rechte vorbehalten.
           </p>
 
           <div className="flex items-center gap-6">
