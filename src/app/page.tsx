@@ -55,7 +55,35 @@ const [menuOpen, setMenuOpen] = useState(false);
 
          {/* DARK OVERLAY */}
 
-<div className="absolute inset-0 bg-black/55" />
+<div className="
+
+  absolute
+
+  bottom-[-30px]
+
+  right-3
+
+  w-[140px]
+
+  sm:w-[180px]
+
+  md:w-[260px]
+
+  overflow-hidden
+
+  rounded-[22px]
+
+  md:rounded-[28px]
+
+  border-4
+
+  md:border-8
+
+  border-white
+
+  shadow-2xl
+
+" />
 
 </motion.div>
         
@@ -819,10 +847,10 @@ rel="noopener noreferrer"
 
   <div className="container-custom">
 
-    <div className="grid items-center gap-16 lg:grid-cols-2">
+    <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
 
       {/* LEFT IMAGES */}
-      <div className="relative">
+      <div className="relative order-2 lg:order-1 mb-10 lg:mb-0">
 
         {/* MAIN IMAGE */}
         <div className="overflow-hidden rounded-[32px] shadow-2xl">
@@ -866,63 +894,150 @@ rel="noopener noreferrer"
 
       </div>
 
+      {/* MOBILE FEATURES */}
+<div className="order-3 lg:hidden mt-14">
+
+  <div className="space-y-5">
+
+    <div className="flex items-start gap-4">
+
+      <div className="mt-1 h-3 w-3 rounded-full bg-[#84c225]" />
+
+      <p className="text-gray-700">
+        Zuverlässig & pünktlich
+      </p>
+
+    </div>
+
+    <div className="flex items-start gap-4">
+
+      <div className="mt-1 h-3 w-3 rounded-full bg-[#84c225]" />
+
+      <p className="text-gray-700">
+        Moderne Geräte & professionelle Technik
+      </p>
+
+    </div>
+
+    <div className="flex items-start gap-4">
+
+      <div className="mt-1 h-3 w-3 rounded-full bg-[#84c225]" />
+
+      <p className="text-gray-700">
+        Faire Preise & schnelle Kommunikation
+      </p>
+
+    </div>
+
+  </div>
+
+  <a
+    href="https://wa.me/491606094947"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      mt-12
+      inline-flex
+      items-center
+      gap-3
+      rounded-2xl
+      bg-[#84c225]
+      px-8
+      py-5
+      text-lg
+      font-semibold
+      text-black
+      shadow-[0_10px_35px_rgba(132,194,37,0.35)]
+      transition
+      hover:scale-[1.03]
+      hover:bg-[#96d92b]
+    "
+  >
+
+    <FaWhatsapp size={24} />
+
+    WhatsApp Anfrage
+
+  </a>
+
+</div>
+
+    
       {/* RIGHT CONTENT */}
-      <div>
+<div className="order-1 lg:order-2">
 
-        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#84c225]">
-          Über Uns
-        </p>
+  {/* MOBILE TOP TEXT */}
+  <div className="lg:hidden">
 
-        <h2 className="text-5xl font-bold leading-tight text-black">
-          Persönlicher Service
-          mit Leidenschaft
-        </h2>
+    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#84c225]">
+      Über Uns
+    </p>
 
-        <p className="mt-8 text-lg leading-relaxed text-gray-600">
+    <h2 className="text-5xl font-bold leading-tight text-black">
+      Persönlicher Service
+      mit Leidenschaft
+    </h2>
 
-          Haus & Gartenservice Vitalij Lind steht für
-          saubere Arbeit, Zuverlässigkeit und schnelle
-          Terminvergabe in Bad Hersfeld und Umgebung.
+    <p className="mt-8 text-lg leading-relaxed text-gray-600">
+      Haus & Gartenservice Vitalij Lind steht für
+      saubere Arbeit, Zuverlässigkeit und schnelle
+      Terminvergabe in Bad Hersfeld und Umgebung.
+    </p>
 
-        </p>
+  </div>
 
-        {/* FEATURES */}
-        <div className="mt-10 space-y-5">
+<div className="hidden lg:block mt-10 space-y-5">
 
-          <div className="flex items-start gap-4">
+  <div className="flex items-start gap-4">
+    <div className="mt-1 h-3 w-3 rounded-full bg-[#84c225]" />
+    <p className="text-gray-700">
+      Zuverlässig & pünktlich
+    </p>
+  </div>
 
-            <div className="mt-1 h-3 w-3 rounded-full bg-[#84c225]" />
+  <div className="flex items-start gap-4">
+    <div className="mt-1 h-3 w-3 rounded-full bg-[#84c225]" />
+    <p className="text-gray-700">
+      Moderne Geräte & professionelle Technik
+    </p>
+  </div>
 
-            <p className="text-gray-700">
-              Zuverlässig & pünktlich
-            </p>
+  <div className="flex items-start gap-4">
+    <div className="mt-1 h-3 w-3 rounded-full bg-[#84c225]" />
+    <p className="text-gray-700">
+      Faire Preise & schnelle Kommunikation
+    </p>
+  </div>
 
-          </div>
+</div>
 
-          <div className="flex items-start gap-4">
+  {/* DESKTOP TEXT */}
+  <div className="hidden lg:block">
 
-            <div className="mt-1 h-3 w-3 rounded-full bg-[#84c225]" />
+    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#84c225]">
+      Über Uns
+    </p>
 
-            <p className="text-gray-700">
-              Moderne Geräte & professionelle Technik
-            </p>
+    <h2 className="text-5xl font-bold leading-tight text-black">
+      Persönlicher Service
+      mit Leidenschaft
+    </h2>
 
-          </div>
+    <p className="mt-8 text-lg leading-relaxed text-gray-600">
+      Haus & Gartenservice Vitalij Lind steht für
+      saubere Arbeit, Zuverlässigkeit und schnelle
+      Terminvergabe in Bad Hersfeld und Umgebung.
+    </p>
 
-          <div className="flex items-start gap-4">
+  </div>
 
-            <div className="mt-1 h-3 w-3 rounded-full bg-[#84c225]" />
 
-            <p className="text-gray-700">
-              Faire Preise & schnelle Kommunikation
-            </p>
+        
+        {/* DESKTOP BUTTON */}
 
-          </div>
+<div className="hidden lg:block">
 
-        </div>
-
-        {/* BUTTON */}
-        <a
+  <a
           href="https://wa.me/491606094947"
           target="_blank"
           rel="noopener noreferrer"
@@ -950,6 +1065,8 @@ rel="noopener noreferrer"
           WhatsApp Anfrage
 
         </a>
+
+        </div>
 
       </div>
 
