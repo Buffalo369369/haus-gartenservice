@@ -185,7 +185,25 @@ rel="noopener noreferrer"
   "
 >
 
-  {menuOpen ? <X size={20} /> : <Menu size={20} />}
+  <div className="relative h-5 w-5">
+
+  <Menu
+    size={20}
+    className={`
+      absolute inset-0 transition-all duration-200
+      ${menuOpen ? "opacity-0 rotate-90" : "opacity-100 rotate-0"}
+    `}
+  />
+
+  <X
+    size={20}
+    className={`
+      absolute inset-0 transition-all duration-200
+      ${menuOpen ? "opacity-100 rotate-0" : "opacity-0 -rotate-90"}
+    `}
+  />
+
+</div>
 
 </button>
 
@@ -224,44 +242,102 @@ rel="noopener noreferrer"
 
     <div className="flex flex-col gap-3">
 
-      <a
-        href="#leistungen"
-        onClick={() => setMenuOpen(false)}
-        className="rounded-2xl bg-white/10 px-5 py-4 text-white transition hover:bg-white/20"
-      >
-        Leistungen
-      </a>
+  <a
+    href="/"
+    onClick={() => setMenuOpen(false)}
+    className="
+      rounded-2xl
+      bg-white/10
+      px-5
+      py-4
+      text-white
+      transition
+      hover:bg-white/20
+    "
+  >
+    Startseite
+  </a>
 
-      <a
+  <a
+    href="#leistungen"
+    onClick={() => setMenuOpen(false)}
+    className="
+      rounded-2xl
+      bg-white/10
+      px-5
+      py-4
+      text-white
+      transition
+      hover:bg-white/20
+    "
+  >
+    Leistungen
+  </a>
 
-  href="#vorher-nachher"
+  <a
+    href="#vorher-nachher"
+    onClick={() => setMenuOpen(false)}
+    className="
+      rounded-2xl
+      bg-white/10
+      px-5
+      py-4
+      text-white
+      transition
+      hover:bg-white/20
+    "
+  >
+    Galerie
+  </a>
 
-  onClick={() => setMenuOpen(false)}
+  <a
+    href="#uber-uns"
+    onClick={() => setMenuOpen(false)}
+    className="
+      rounded-2xl
+      bg-white/10
+      px-5
+      py-4
+      text-white
+      transition
+      hover:bg-white/20
+    "
+  >
+    Über Uns
+  </a>
 
-  className="rounded-2xl bg-white/10 px-5 py-4 text-white transition hover:bg-white/20"
+  <a
+    href="#kontakt"
+    onClick={() => setMenuOpen(false)}
+    className="
+      rounded-2xl
+      bg-white/10
+      px-5
+      py-4
+      text-white
+      transition
+      hover:bg-white/20
+    "
+  >
+    Kontakte
+  </a>
 
->
+  <a
+    href="tel:01606094947"
+    className="
+      rounded-2xl
+      bg-[#84c225]
+      px-5
+      py-4
+      text-center
+      font-semibold
+      text-black
+    "
+  >
+    📞 Anrufen
+  </a>
 
-  Vorher & Nachher
-
-</a>
-
-      <a
-        href="#kontakt"
-        onClick={() => setMenuOpen(false)}
-        className="rounded-2xl bg-white/10 px-5 py-4 text-white transition hover:bg-white/20"
-      >
-        Kontakt
-      </a>
-
-      <a
-        href="tel:01606094947"
-        className="rounded-2xl bg-[#84c225] px-5 py-4 text-center font-semibold text-black"
-      >
-        📞 Anrufen
-      </a>
-
-    </div>
+</div>
 
   </motion.div>
 
@@ -1148,7 +1224,7 @@ rel="noopener noreferrer"
 </section>
 
 {/* FOOTER */}
-<footer className="bg-[#111111] text-white">
+<footer id="kontakt" className="bg-[#111111] text-white">
 
   <div className="container-custom py-20">
 
