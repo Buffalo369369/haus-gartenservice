@@ -829,9 +829,13 @@ rel="noopener noreferrer"
               height={700}
               priority
               className="
+
   h-[260px]
-  md:h-full
+
+  md:h-[420px]
+
   w-full
+
   object-cover
   transition
   duration-700
@@ -864,9 +868,13 @@ rel="noopener noreferrer"
               width={900}
               height={700}
               className="
+
   h-[260px]
-  md:h-full
+
+  md:h-[420px]
+
   w-full
+
   object-cover
   transition
   duration-700
@@ -904,10 +912,14 @@ rel="noopener noreferrer"
   width={900}
   height={700}
   className="
-    h-[260px]
-    md:h-full
-    w-full
-    object-cover
+
+  h-[260px]
+
+  md:h-[420px]
+
+  w-full
+
+  object-cover
     transition
     duration-700
     group-hover:scale-105
@@ -939,9 +951,13 @@ rel="noopener noreferrer"
               width={900}
               height={700}
               className="
+
   h-[260px]
-  md:h-full
+
+  md:h-[420px]
+
   w-full
+
   object-cover
   transition
   duration-700
