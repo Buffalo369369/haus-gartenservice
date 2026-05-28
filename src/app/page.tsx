@@ -35,13 +35,10 @@ const [menuOpen, setMenuOpen] = useState(false);
       {/* HERO */}
       <section className="relative overflow-hidden">
 
-        {/* BACKGROUND */}
-        <motion.div
-
-  className="absolute inset-0"
-
+        {/* DESKTOP PARALLAX */}
+<motion.div
+  className="absolute inset-0 hidden md:block"
   style={{ y: bgY }}
-
 >
 
           <Image
@@ -49,7 +46,7 @@ const [menuOpen, setMenuOpen] = useState(false);
             alt="Gartenpflege in Bad Hersfeld"
             fill
             priority
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="
 
   object-cover
@@ -65,6 +62,30 @@ const [menuOpen, setMenuOpen] = useState(false);
 "
           />
           <div className="absolute inset-0 bg-black/45" />
+
+          </motion.div>
+
+
+          {/* MOBILE STATIC BACKGROUND */}
+<div className="absolute inset-0 md:hidden">
+
+  <Image
+    src="/hero1.jpg"
+    alt="Gartenpflege in Bad Hersfeld"
+    fill
+    priority
+    sizes="100vw"
+    className="
+      object-cover
+      object-[65%_center]
+      brightness-[0.7]
+      saturate-[0.8]
+    "
+  />
+
+  <div className="absolute inset-0 bg-black/45" />
+
+</div>
           
 
          {/* DARK OVERLAY */}
@@ -99,7 +120,6 @@ const [menuOpen, setMenuOpen] = useState(false);
 
 " />
 
-</motion.div>
         
 
 
@@ -803,10 +823,11 @@ rel="noopener noreferrer"
             </span>
 
             <Image
-              src="/before10.jpg"
+              src="/before100.jpg"
               alt="Vorher Garten"
               width={900}
               height={700}
+              priority
               className="
   h-[260px]
   md:h-full
@@ -838,7 +859,7 @@ rel="noopener noreferrer"
             </span>
 
             <Image
-              src="/after10.jpg"
+              src="/after100.jpg"
               alt="Nachher Garten"
               width={900}
               height={700}
@@ -878,7 +899,7 @@ rel="noopener noreferrer"
             </span>
 
             <Image
-  src="/before20.jpg"
+  src="/before200.jpg"
   alt="Vorher Reinigung"
   width={900}
   height={700}
@@ -913,7 +934,7 @@ rel="noopener noreferrer"
             </span>
 
             <Image
-              src="/after20.jpg"
+              src="/after200.jpg"
               alt="Nachher Reinigung"
               width={900}
               height={700}
