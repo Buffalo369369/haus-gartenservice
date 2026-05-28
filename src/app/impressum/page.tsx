@@ -3,10 +3,11 @@ import Navbar from "@/components/Navbar";
 export default function ImpressumPage() {
   return (
     <main className="min-h-screen bg-[#f5f7f2] px-6 pt-32 pb-24">
-        <Navbar />
+      <Navbar />
+
       <div className="mx-auto max-w-4xl rounded-[32px] bg-white p-8 shadow-xl md:p-14">
 
-       <h1 className="text-3xl leading-tight font-bold text-black md:text-5xl">
+        <h1 className="text-3xl leading-tight font-bold text-black md:text-5xl">
           Impressum
         </h1>
 
@@ -18,25 +19,25 @@ export default function ImpressumPage() {
         <section className="mt-12 space-y-5">
 
           <div className="leading-relaxed text-gray-700">
+
             <p className="font-semibold text-black">
               Haus & Gartenservice Vitalij Lind
             </p>
 
             <p>Vitalij Lind</p>
 
-            <p>[Straße und Hausnummer]</p>
-
-            <p>[PLZ Ort]</p>
+            <p>36251 Bad Hersfeld</p>
 
             <p>Deutschland</p>
 
             <p className="mt-4">
-              Telefon: 01606094947
+              Telefon: 0160 6094947
             </p>
 
             <p>
-              E-Mail: deine-email@example.com
+              E-Mail: vitalij.lind@outlook.com
             </p>
+
           </div>
 
         </section>
@@ -49,13 +50,13 @@ export default function ImpressumPage() {
           </h2>
 
           <div className="leading-relaxed text-gray-700">
+
             <p>Vitalij Lind</p>
 
-            <p>[Straße und Hausnummer]</p>
-
-            <p>[PLZ Ort]</p>
+            <p>36251 Bad Hersfeld</p>
 
             <p>Deutschland</p>
+
           </div>
 
         </section>
@@ -76,13 +77,13 @@ export default function ImpressumPage() {
             href="https://ec.europa.eu/consumers/odr/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium text-[#84c225] transition hover:text-black"
+            className="font-medium text-[#84c225] transition hover:text-black break-all"
           >
             https://ec.europa.eu/consumers/odr/
           </a>
 
           <p className="leading-relaxed text-gray-700">
-            Unsere E-Mail-Adresse finden Sie oben im Impressum.
+            E-Mail: vitalij.lind@outlook.com
           </p>
 
         </section>
@@ -156,7 +157,5 @@ export default function ImpressumPage() {
 
       </div>
     </main>
-
-    
   );
 }

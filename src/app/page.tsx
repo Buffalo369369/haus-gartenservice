@@ -15,6 +15,7 @@ import {
   Sparkles,
   Leaf,
   ImageIcon,
+  Mail
 } from "lucide-react";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -235,7 +236,7 @@ rel="noopener noreferrer"
       border-white/10
       bg-black/40
       p-4
-      backdrop-blur-2xl
+      backdrop-blur-md
       md:hidden
     "
   >
@@ -672,12 +673,23 @@ rel="noopener noreferrer"
   return (
 
               <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-                viewport={{ once: true }}
-                className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-2xl"
+  key={index}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.4 }}
+  viewport={{ once: true, amount: 0.2 }}
+                className="
+  group
+  rounded-3xl
+  border
+  border-gray-200
+  bg-white
+  p-8
+  shadow-sm
+  transition
+  md:hover:-translate-y-2
+  md:hover:shadow-2xl
+"
               >
 
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#84c225]/10 text-[#84c225]">
@@ -1287,30 +1299,33 @@ rel="noopener noreferrer"
         </a>
 
         {/* EMAIL */}
-        <a
-          href="mailto:info@vitalij-lind.de"
-          className="
-            inline-flex
-            items-center
-            justify-center
-            gap-3
-            rounded-2xl
-            border
-            border-white/10
-            bg-white/5
-            px-8
-            py-4
-            font-semibold
-            text-white
-            transition
-            hover:bg-white/10
-          "
-        >
+<a
+  href="mailto:vitalij.lind@outlook.com"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    gap-3
+    rounded-2xl
+    border
+    border-white/10
+    bg-white/5
+    px-8
+    py-4
+    font-semibold
+    text-white
+    shadow-[0_10px_35px_rgba(255,255,255,0.05)]
+    transition
+    hover:scale-[1.03]
+    hover:bg-white/10
+  "
+>
 
-          ✉️ E-Mail schreiben
+  <Mail size={22} />
 
-        </a>
+  E-Mail schreiben
 
+</a>
       </div>
 
       {/* PHONE */}
