@@ -56,18 +56,22 @@ export default function WinterdienstPage() {
                   text-[#84c225]
                 "
               >
-                Winterdienst Bad Hersfeld und Umgebung.
+                Winterdienst Bad Hersfeld und Umgebung
               </p>
 
               <h1
                 className="
-text-3xl
-font-bold
-leading-tight
-text-black
-sm:text-4xl
+text-4xl
 
-md:text-5xl
+font-bold
+
+leading-tight
+
+text-black
+
+sm:text-5xl
+
+md:text-6xl
 "
               >
                 Zuverlässiger
@@ -478,7 +482,7 @@ md:text-5xl
                 border
                 border-sky-100
                 bg-sky-50
-                p-10
+                p-8 md:p-10
                 shadow-lg
               "
             >
@@ -527,7 +531,7 @@ md:text-5xl
                 border
                 border-sky-100
                 bg-sky-50
-                p-10
+                p-8 md:p-10
                 shadow-lg
               "
             >
@@ -646,7 +650,7 @@ md:text-5xl
                 className="
                   rounded-3xl
                   bg-white
-                  p-10
+                  p-8 md:p-10
                   text-center
                   shadow-lg
                 "
@@ -706,7 +710,7 @@ md:text-5xl
               bg-gradient-to-r
               from-sky-50
               to-white
-              p-14
+              p-8 md:p-14
               text-center
               shadow-xl
             "
