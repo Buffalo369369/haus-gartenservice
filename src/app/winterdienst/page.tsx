@@ -43,7 +43,7 @@ export default function WinterdienstPage() {
                 "
               >
                 <Snowflake size={16} />
-                Wintersaison 2025 / 2026
+                Wintersaison 2026
               </div>
 
               <p
@@ -252,11 +252,7 @@ md:text-6xl
                 text: "Parkplätze, Firmengelände und Zufahrten.",
                 icon: Building2,
               },
-              {
-                title: "Schneetransport",
-                text: "Abtransport großer Schneemengen bei Bedarf.",
-                icon: Truck,
-              },
+             
             ].map((service, index) => {
 
               const Icon = service.icon;
@@ -380,11 +376,10 @@ md:text-6xl
               "24/7 Einsatzbereitschaft",
               "Faire und transparente Preise",
               "Schnelle Reaktionszeiten",
-              "Moderne Technik",
               "Zuverlässige Ausführung",
               "Persönlicher Ansprechpartner",
               "Privat & Gewerbe",
-              "Bad Hersfeld und Umgebung",
+              
             ].map((item) => (
 
               <div
@@ -522,7 +517,7 @@ md:text-6xl
                   text-[#84c225]
                 "
               >
-                ab ca. 700 € / Saison
+                ab ca. 650 € / Saison
               </p>
 
             </div>
@@ -571,7 +566,7 @@ md:text-6xl
                   text-[#84c225]
                 "
               >
-                ab ca. 850 € / Saison
+                ab ca. 900 € / Saison
               </p>
 
             </div>
