@@ -137,7 +137,7 @@ md:text-6xl
             >
 
               <Image
-                src="/winterdienst.jpg"
+                src="/winterdienst1.jpg"
                 alt="Winterdienst Bad Hersfeld"
                 width={1200}
                 height={900}
