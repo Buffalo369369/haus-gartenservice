@@ -61,12 +61,14 @@ export default function WinterdienstPage() {
 
               <h1
                 className="
-                  text-5xl
-                  font-bold
-                  leading-tight
-                  text-black
-                  md:text-7xl
-                "
+text-3xl
+font-bold
+leading-tight
+text-black
+sm:text-4xl
+
+md:text-5xl
+"
               >
                 Zuverlässiger
                 <span className="block text-sky-600">
@@ -172,13 +174,22 @@ export default function WinterdienstPage() {
             </p>
 
             <h2
-              className="
-                text-4xl
-                font-bold
-                text-black
-                md:text-5xl
-              "
-            >
+
+ className="
+
+ text-3xl
+
+ sm:text-4xl
+
+ md:text-5xl
+
+ font-bold
+
+ text-black
+
+ "
+
+>
               Rundum Winterservice
             </h2>
 
@@ -328,13 +339,22 @@ export default function WinterdienstPage() {
             </p>
 
             <h2
-              className="
-                text-4xl
-                font-bold
-                text-black
-                md:text-5xl
-              "
-            >
+
+ className="
+
+ text-3xl
+
+ sm:text-4xl
+
+ md:text-5xl
+
+ font-bold
+
+ text-black
+
+ "
+
+>
               Darum entscheiden sich
               Kunden für uns
             </h2>
@@ -421,13 +441,22 @@ export default function WinterdienstPage() {
             </p>
 
             <h2
-              className="
-                text-4xl
-                font-bold
-                text-black
-                md:text-5xl
-              "
-            >
+
+ className="
+
+ text-3xl
+
+ sm:text-4xl
+
+ md:text-5xl
+
+ font-bold
+
+ text-black
+
+ "
+
+>
               Für Privat & Gewerbe
             </h2>
 
@@ -456,7 +485,7 @@ export default function WinterdienstPage() {
 
               <h3
                 className="
-                  text-3xl
+                  text-2xl md:text-3xl
                   font-bold
                   text-black
                 "
@@ -505,7 +534,7 @@ export default function WinterdienstPage() {
 
               <h3
                 className="
-                  text-3xl
+                  text-2xl md:text-3xl
                   font-bold
                   text-black
                 "
@@ -567,13 +596,22 @@ export default function WinterdienstPage() {
             </p>
 
             <h2
-              className="
-                text-4xl
-                font-bold
-                text-black
-                md:text-5xl
-              "
-            >
+
+ className="
+
+ text-3xl
+
+ sm:text-4xl
+
+ md:text-5xl
+
+ font-bold
+
+ text-black
+
+ "
+
+>
               So funktioniert's
             </h2>
 
@@ -683,23 +721,42 @@ export default function WinterdienstPage() {
               "
             />
 
-            <h2
-              className="
-                text-5xl
-                font-bold
-                text-black
-              "
-            >
+           <h2
+
+ className="
+
+ text-3xl
+
+ sm:text-4xl
+
+ md:text-5xl
+
+ font-bold
+
+ text-black
+
+ "
+
+>
               Wintersaison
             </h2>
 
             <div
               className="
-                mt-6
-                text-6xl
-                font-black
-                text-[#84c225]
-              "
+
+mt-6
+
+text-4xl
+
+font-black
+
+text-[#84c225]
+
+sm:text-5xl
+
+md:text-6xl
+
+"
             >
               01.10 – 31.03
             </div>
@@ -743,10 +800,12 @@ export default function WinterdienstPage() {
 
             <h2
               className="
-                text-4xl
+                text-3xl
                 font-bold
                 text-black
-                md:text-6xl
+                sm:text-4xl
+
+md:text-6xl
               "
             >
               Bereit für den Winter?
