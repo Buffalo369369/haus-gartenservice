@@ -43,7 +43,7 @@ export default function WinterdienstPage() {
                 "
               >
                 <Snowflake size={16} />
-                Wintersaison 2026
+                Wintersaison 2026/2027
               </div>
 
               <p
