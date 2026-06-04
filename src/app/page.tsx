@@ -19,6 +19,8 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+import { Snowflake } from "lucide-react";
 
 export default function Home() {
   const { scrollY } = useScroll();
@@ -74,7 +76,7 @@ const [menuOpen, setMenuOpen] = useState(false);
     alt="Gartenpflege in Bad Hersfeld"
     fill
     priority
-    sizes="100vw"
+    sizes="(max-width: 768px) 100vw, 1200px"
     className="
       object-cover
       object-[65%_center]
@@ -770,6 +772,61 @@ rel="noopener noreferrer"
   </a>
 
 </div>
+
+<Link href="/winterdienst">
+  <div
+    className="
+      mt-12
+      rounded-3xl
+      bg-gradient-to-r
+      from-sky-100
+      to-blue-50
+      p-8
+      shadow-sm
+      transition
+      hover:shadow-xl
+      hover:-translate-y-1
+      cursor-pointer
+    "
+  >
+
+    <div className="flex items-center gap-3">
+
+      <div className="
+        flex h-14 w-14
+        items-center justify-center
+        rounded-2xl
+        bg-sky-500/10
+        text-sky-600
+      ">
+        <Snowflake size={30} />
+      </div>
+
+      <div>
+
+        <p className="text-sm font-semibold uppercase tracking-wider text-sky-600">
+          Winterdienst
+        </p>
+
+        <h3 className="text-3xl font-bold text-black">
+          Schnee- & Streudienst
+        </h3>
+
+      </div>
+
+    </div>
+
+    <p className="mt-4 text-gray-600">
+      Zuverlässiger Winterdienst für Privatpersonen
+      und Gewerbekunden in Bad Hersfeld und Umgebung.
+    </p>
+
+    <div className="mt-6 inline-flex items-center font-semibold text-sky-600">
+      Mehr erfahren →
+    </div>
+
+  </div>
+</Link>
 
         </div>
 
