@@ -298,6 +298,22 @@ rel="noopener noreferrer"
   </a>
 
   <a
+  href="/winterdienst"
+  onClick={() => setMenuOpen(false)}
+  className="
+    rounded-2xl
+    bg-sky-500/20
+    px-5
+    py-4
+    text-white
+    transition
+    hover:bg-sky-500/30
+  "
+>
+  Winterdienst
+</a>
+
+  <a
     href="#vorher-nachher"
     onClick={() => setMenuOpen(false)}
     className="
@@ -328,6 +344,36 @@ rel="noopener noreferrer"
   >
     Über Uns
   </a>
+
+  <a
+
+  href="#faq"
+
+  onClick={() => setMenuOpen(false)}
+
+  className="
+
+    rounded-2xl
+
+    bg-white/10
+
+    px-5
+
+    py-4
+
+    text-white
+
+    transition
+
+    hover:bg-white/20
+
+  "
+
+>
+
+  FAQ
+
+</a>
 
   <a
     href="#kontakt"
@@ -1322,6 +1368,122 @@ rel="noopener noreferrer"
 </div>
 
       </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* FAQ */}
+<section id="faq" className="bg-[#f5f7f2] py-28">
+
+  <div className="container-custom">
+
+    <div className="mx-auto max-w-3xl text-center">
+
+      <p className="
+        mb-4
+        text-sm
+        font-semibold
+        uppercase
+        tracking-[0.2em]
+        text-[#84c225]
+      ">
+        Häufige Fragen
+      </p>
+
+      <h2 className="
+        text-4xl
+        md:text-5xl
+        font-bold
+        text-black
+      ">
+        Antworten auf häufige Fragen
+      </h2>
+
+      <p className="
+        mt-6
+        text-lg
+        text-gray-600
+      ">
+        Hier finden Sie Antworten auf die
+        häufigsten Fragen unserer Kunden.
+      </p>
+
+    </div>
+
+    <div className="
+      mx-auto
+      mt-20
+      max-w-4xl
+      space-y-6
+    ">
+
+      {[
+        {
+          q: "Welche Dienstleistungen bieten Sie an?",
+          a: "Wir bieten Gartenpflege, Heckenschnitt, Entrümpelung, Reinigung, Hausmeisterservice und Winterdienst an.",
+        },
+
+        {
+          q: "In welchen Orten sind Sie tätig?",
+          a: "Bad Hersfeld und Umgebung.",
+        },
+
+        {
+          q: "Wie schnell können Termine vergeben werden?",
+          a: "Je nach Auslastung oft kurzfristig nach Absprache.",
+        },
+
+        {
+          q: "Arbeiten Sie auch für Unternehmen?",
+          a: "Ja, wir betreuen Privatkunden sowie Gewerbekunden.",
+        },
+
+        {
+          q: "Wie kann ich ein Angebot erhalten?",
+          a: "Ganz einfach per WhatsApp oder telefonisch.",
+        },
+
+        {
+          q: "Bieten Sie auch regelmäßige Pflege an?",
+          a: "Ja, sowohl einmalige Einsätze als auch regelmäßige Betreuung sind möglich.",
+        },
+
+      ].map((item) => (
+
+        <div
+          key={item.q}
+          className="
+            rounded-3xl
+            bg-white
+            p-8
+            shadow-sm
+            border
+            border-gray-100
+          "
+        >
+
+          <h3 className="
+            text-xl
+            font-bold
+            text-black
+          ">
+            {item.q}
+          </h3>
+
+          <p className="
+            mt-3
+            leading-relaxed
+            text-gray-600
+          ">
+            {item.a}
+          </p>
+
+        </div>
+
+      ))}
 
     </div>
 

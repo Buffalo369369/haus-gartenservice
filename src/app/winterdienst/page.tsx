@@ -23,7 +23,7 @@ export default function WinterdienstPage() {
 
         <div className="container-custom">
 
-          <div className="grid items-center gap-16 lg:grid-cols-2">
+          <div className="grid items-center gap-10 lg:gap-16 lg:grid-cols-2">
 
             {/* LEFT */}
             <div>
@@ -143,10 +143,13 @@ md:text-6xl
                 height={900}
                 priority
                 className="
-                  h-full
-                  w-full
-                  object-cover
-                "
+  h-full
+  w-full
+  object-cover
+  transition
+  duration-700
+  hover:scale-105
+"
               />
 
             </div>
@@ -263,16 +266,16 @@ md:text-6xl
                 <div
                   key={index}
                   className="
-                    rounded-3xl
-                    border
-                    border-sky-100
-                    bg-white
-                    p-8
-                    shadow-lg
-                    transition
-                    hover:-translate-y-2
-                    hover:shadow-2xl
-                  "
+  rounded-3xl
+  border
+  border-sky-100
+  bg-white
+  p-8
+  shadow-lg
+  transition
+  md:hover:-translate-y-2
+  md:hover:shadow-2xl
+"
                 >
 
                   <div
@@ -696,7 +699,7 @@ md:text-6xl
       </section>
 
       {/* SAISON */}
-      <section className="bg-white py-28">
+      <section className="bg-white pt-28 pb-12">
 
         <div className="container-custom">
 
@@ -782,6 +785,82 @@ md:text-6xl
 
       </section>
 
+    {/* FAQ */}
+<section className="bg-sky-50 py-24">
+
+  <div className="container-custom">
+
+    <div className="mx-auto max-w-3xl text-center">
+
+      <p className="
+        mb-4
+        text-sm
+        font-semibold
+        uppercase
+        tracking-[0.2em]
+        text-[#84c225]
+      ">
+        FAQ
+      </p>
+
+      <h2 className="
+        text-3xl
+        sm:text-4xl
+        md:text-5xl
+        font-bold
+        text-black
+      ">
+        Häufige Fragen
+      </h2>
+
+    </div>
+
+    <div className="mx-auto mt-16 max-w-4xl space-y-6">
+
+      <div className="rounded-3xl border border-sky-100 p-8 shadow-sm">
+        <h3 className="text-xl font-bold text-black">
+          Wann beginnt die Wintersaison?
+        </h3>
+        <p className="mt-3 text-gray-600">
+          Unsere Wintersaison läuft in der Regel vom 01.10. bis 31.03.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-sky-100 p-8 shadow-sm">
+        <h3 className="text-xl font-bold text-black">
+          Räumen Sie auch bei starkem Schneefall?
+        </h3>
+        <p className="mt-3 text-gray-600">
+          Ja, wir sind auch bei starkem Schneefall und Glätte einsatzbereit.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-sky-100 p-8 shadow-sm">
+        <h3 className="text-xl font-bold text-black">
+          Betreuen Sie Privat- und Gewerbekunden?
+        </h3>
+        <p className="mt-3 text-gray-600">
+          Ja, wir übernehmen Winterdienste für Privatpersonen,
+          Unternehmen und Hausverwaltungen.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-sky-100 p-8 shadow-sm">
+        <h3 className="text-xl font-bold text-black">
+          Wie schnell kann ein Einsatz erfolgen?
+        </h3>
+        <p className="mt-3 text-gray-600">
+          Dank unserer Bereitschaft können Einsätze kurzfristig
+          und flexibel durchgeführt werden.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
       {/* CTA */}
       <section className="bg-sky-50 py-28">
 
@@ -793,8 +872,9 @@ md:text-6xl
               border
               border-sky-100
               bg-gradient-to-r
-              from-sky-100
-              to-white
+             from-sky-200
+
+             to-sky-50
               p-12
               text-center
               shadow-xl
