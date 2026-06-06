@@ -5,159 +5,81 @@ export default function ImpressumPage() {
     <main className="min-h-screen bg-[#f5f7f2] px-6 pt-32 pb-24">
       <Navbar />
 
-      <div className="mx-auto max-w-4xl rounded-[32px] bg-white p-8 shadow-xl md:p-14">
+      <h1 className="text-3xl font-bold text-black md:text-5xl">
+  Impressum
+</h1>
 
-        <h1 className="text-3xl leading-tight font-bold text-black md:text-5xl">
-          Impressum
-        </h1>
+<p className="mt-6 text-gray-600">
+  Angaben gemäß § 5 DDG
+</p>
 
-        <p className="mt-6 text-gray-600">
-          Angaben gemäß § 5 TMG
-        </p>
 
-        {/* SECTION */}
-        <section className="mt-12 space-y-5">
+{/* Angaben */}
+<section className="mt-12 space-y-5">
 
-          <div className="leading-relaxed text-gray-700">
+  <div className="leading-relaxed text-gray-700">
 
-            <p className="font-semibold text-black">
-              Haus & Gartenservice Vitalij Lind
-            </p>
+    <p className="font-semibold text-black">
+      Haus & Gartenservice Vitalij Lind
+    </p>
 
-            <p>Vitalij Lind</p>
+    <p>Inhaber: Vitalij Lind</p>
 
-            <p>Stettiner Straße 20</p>
+    <p>Stettiner Straße 20</p>
 
-            <p>36251 Bad Hersfeld</p>
+    <p>36251 Bad Hersfeld</p>
 
-            <p>Deutschland</p>
+    <p>Deutschland</p>
 
-            <p className="mt-4">
-              Telefon: 0160 6094947
-            </p>
+    <p className="mt-4">
+      Telefon: 0160 6094947
+    </p>
 
-            <p>
-              E-Mail: vitalij.lind@outlook.com
-            </p>
+    <p>
+      E-Mail: vitalij.lind@outlook.com
+    </p>
 
-          </div>
+  </div>
 
-        </section>
+</section>
 
-        {/* SECTION */}
-        <section className="mt-12 space-y-5">
 
-          <h2 className="text-2xl font-bold text-black">
-            Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
-          </h2>
+{/* Verantwortlicher */}
+<section className="mt-12 space-y-5">
 
-          <div className="leading-relaxed text-gray-700">
+  <h2 className="text-2xl font-bold text-black">
+    Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
+  </h2>
 
-            <p>Vitalij Lind</p>
+  <div className="leading-relaxed text-gray-700">
 
-            <p>36251 Bad Hersfeld</p>
+    <p>Vitalij Lind</p>
 
-            <p>Deutschland</p>
+    <p>Stettiner Straße 20</p>
 
-          </div>
+    <p>36251 Bad Hersfeld</p>
 
-        </section>
+    <p>Deutschland</p>
 
-        {/* SECTION */}
-        <section className="mt-12 space-y-5">
+  </div>
 
-          <h2 className="text-2xl font-bold text-black">
-            EU-Streitschlichtung
-          </h2>
+</section>
 
-          <p className="leading-relaxed text-gray-700">
-            Die Europäische Kommission stellt eine Plattform
-            zur Online-Streitbeilegung (OS) bereit:
-          </p>
 
-          <a
-            href="https://ec.europa.eu/consumers/odr/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-[#84c225] transition hover:text-black break-all"
-          >
-            https://ec.europa.eu/consumers/odr/
-          </a>
+{/* Verbraucherstreitbeilegung */}
+<section className="mt-12 space-y-5">
 
-          <p className="leading-relaxed text-gray-700">
-            E-Mail: vitalij.lind@outlook.com
-          </p>
+  <h2 className="text-2xl font-bold text-black">
+    Verbraucherstreitbeilegung
+  </h2>
 
-        </section>
+  <p className="leading-relaxed text-gray-700">
+    Wir sind nicht bereit oder verpflichtet,
+    an Streitbeilegungsverfahren vor einer
+    Verbraucherschlichtungsstelle teilzunehmen.
+  </p>
 
-        {/* SECTION */}
-        <section className="mt-12 space-y-5">
-
-          <h2 className="text-2xl font-bold text-black">
-            Verbraucherstreitbeilegung / Universalschlichtungsstelle
-          </h2>
-
-          <p className="leading-relaxed text-gray-700">
-            Wir sind nicht bereit oder verpflichtet,
-            an Streitbeilegungsverfahren vor einer
-            Verbraucherschlichtungsstelle teilzunehmen.
-          </p>
-
-        </section>
-
-        {/* SECTION */}
-        <section className="mt-12 space-y-5">
-
-          <h2 className="text-2xl font-bold text-black">
-            Haftung für Inhalte
-          </h2>
-
-          <p className="leading-relaxed text-gray-700">
-            Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG
-            für eigene Inhalte auf diesen Seiten nach den
-            allgemeinen Gesetzen verantwortlich.
-          </p>
-
-          <p className="leading-relaxed text-gray-700">
-            Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter
-            jedoch nicht verpflichtet, übermittelte oder gespeicherte
-            fremde Informationen zu überwachen.
-          </p>
-
-        </section>
-
-        {/* SECTION */}
-        <section className="mt-12 space-y-5">
-
-          <h2 className="text-2xl font-bold text-black">
-            Haftung für Links
-          </h2>
-
-          <p className="leading-relaxed text-gray-700">
-            Unsere Website enthält Links zu externen Websites Dritter,
-            auf deren Inhalte wir keinen Einfluss haben.
-            Deshalb können wir für diese fremden Inhalte
-            auch keine Gewähr übernehmen.
-          </p>
-
-        </section>
-
-        {/* SECTION */}
-        <section className="mt-12 space-y-5">
-
-          <h2 className="text-2xl font-bold text-black">
-            Urheberrecht
-          </h2>
-
-          <p className="leading-relaxed text-gray-700">
-            Die durch den Seitenbetreiber erstellten Inhalte
-            und Werke auf dieser Website unterliegen dem deutschen
-            Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet.
-          </p>
-
-        </section>
-
-      </div>
+</section>
     </main>
   );
 }
