@@ -12,10 +12,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hausgartenservice-vitalijlind.de/"),
   title: "Haus & Gartenservice Vitalij Lind",
   description:
-    "Professionelle Gartenpflege, Reinigung und Hausmeisterservice in Bad Hersfeld.",
+    "Gartenpflege, Winterdienst, Reinigung und Hausmeisterservice in Bad Hersfeld und Umgebung.",
+
+  openGraph: {
+    title: "Haus & Gartenservice Vitalij Lind",
+    description:
+      "Professioneller Gartenservice, Winterdienst und Hausmeisterservice in Bad Hersfeld.",
+    images: ["/hero1.jpg"],
+    type: "website",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +39,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="de"
+
+  lang="de"
+
+  data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">

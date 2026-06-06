@@ -26,6 +26,8 @@ export default function ImpressumPage() {
 
             <p>Vitalij Lind</p>
 
+            <p>Stettiner Straße 20</p>
+
             <p>36251 Bad Hersfeld</p>
 
             <p>Deutschland</p>

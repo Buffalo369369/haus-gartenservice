@@ -31,12 +31,15 @@ export default function GaleriePage() {
         <div className="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
           {[
-            "/gal1.jpg",
-            "/gal2.jpg",
-            "/gal3.jpg",
-            "/gal4.jpg",
-            "/gal5.jpg",
-            "/gal6.jpg",
+            "/gal10.jpg",
+            "/gal20.jpg",
+            "/gal31.jpg",
+            "/gal40.jpg",
+            "/gal50.jpg",
+            "/gal60.jpg",
+            "/gal70.jpg",
+            "/gal80.jpg",
+            "/gal91.jpg",
           ].map((img, index) => (
 
             <div
@@ -53,13 +56,13 @@ export default function GaleriePage() {
 
   src={img}
 
-  alt="Galerie Bild"
+  alt={`Haus & Gartenservice Bild ${index + 1}`}
 
   width={900}
 
   height={700}
 
-  loading={index === 0 ? "eager" : "lazy"}
+  priority={img === "/gal31.jpg"}
 
   className="
 

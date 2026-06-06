@@ -17,37 +17,14 @@ export default function DatenschutzPage() {
 
         {/* SECTION */}
         <section className="mt-12 space-y-5">
-
           <h2 className="text-2xl font-bold text-black">
-            1. Allgemeine Hinweise
-          </h2>
-
-          <p className="leading-relaxed text-gray-700">
-            Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen.
-            Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend
-            der gesetzlichen Datenschutzvorschriften, insbesondere der
-            Datenschutz-Grundverordnung (DSGVO).
-          </p>
-
-          <p className="leading-relaxed text-gray-700">
-            Die Nutzung dieser Website ist grundsätzlich ohne Angabe
-            personenbezogener Daten möglich. Soweit auf unseren Seiten
-            personenbezogene Daten erhoben werden, erfolgt dies stets
-            auf freiwilliger Basis.
-          </p>
-
-        </section>
-
-        {/* SECTION */}
-        <section className="mt-12 space-y-5">
-
-          <h2 className="text-2xl font-bold text-black">
-            2. Verantwortlicher
+            1. Verantwortlicher
           </h2>
 
           <div className="leading-relaxed text-gray-700">
             <p>Haus & Gartenservice Vitalij Lind</p>
             <p>Vitalij Lind</p>
+            <p>Stettiner Straße 20</p>
             <p>36251 Bad Hersfeld</p>
             <p>Deutschland</p>
 
@@ -59,125 +36,156 @@ export default function DatenschutzPage() {
               E-Mail: vitalij.lind@outlook.com
             </p>
           </div>
-
         </section>
 
         {/* SECTION */}
         <section className="mt-12 space-y-5">
-
           <h2 className="text-2xl font-bold text-black">
-            3. Hosting der Website
+            2. Allgemeine Hinweise
           </h2>
 
           <p className="leading-relaxed text-gray-700">
-            Diese Website wird bei einem externen Hostinganbieter betrieben.
-            Personenbezogene Daten, die auf dieser Website erfasst werden,
-            werden auf den Servern des Hostinganbieters gespeichert.
+            Der Schutz Ihrer personenbezogenen Daten ist uns sehr wichtig.
+            Wir behandeln Ihre Daten vertraulich und entsprechend der
+            gesetzlichen Datenschutzvorschriften, insbesondere der
+            Datenschutz-Grundverordnung (DSGVO).
           </p>
 
           <p className="leading-relaxed text-gray-700">
-            Dabei können insbesondere folgende Daten verarbeitet werden:
+            Personenbezogene Daten sind alle Daten, mit denen Sie persönlich
+            identifiziert werden können.
+          </p>
+        </section>
+
+        {/* SECTION */}
+        <section className="mt-12 space-y-5">
+          <h2 className="text-2xl font-bold text-black">
+            3. Hosting
+          </h2>
+
+          <p className="leading-relaxed text-gray-700">
+            Diese Website wird bei Vercel Inc., 340 S Lemon Ave #4133,
+            Walnut, CA 91789, USA, gehostet.
+          </p>
+
+          <p className="leading-relaxed text-gray-700">
+            Beim Besuch der Website werden durch Vercel technische Daten
+            verarbeitet, insbesondere:
           </p>
 
           <ul className="list-disc space-y-2 pl-6 text-gray-700">
-            <li>IP-Adressen</li>
-            <li>Browserinformationen</li>
+            <li>IP-Adresse</li>
+            <li>Browsertyp und -version</li>
             <li>Betriebssystem</li>
             <li>Datum und Uhrzeit des Zugriffs</li>
-            <li>Referrer-URL</li>
-            <li>Webseitenaufrufe</li>
+            <li>aufgerufene Seiten</li>
           </ul>
 
           <p className="leading-relaxed text-gray-700">
             Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
-            aufgrund unseres berechtigten Interesses an einer sicheren und stabilen
-            Bereitstellung der Website.
+            (berechtigtes Interesse an einer sicheren und stabilen Bereitstellung
+            der Website).
           </p>
-
         </section>
 
         {/* SECTION */}
         <section className="mt-12 space-y-5">
-
           <h2 className="text-2xl font-bold text-black">
-            4. Kontaktformular
+            4. WhatsApp-Kontakt
           </h2>
 
           <p className="leading-relaxed text-gray-700">
-            Wenn Sie uns per Kontaktformular Anfragen zukommen lassen,
-            werden Ihre Angaben aus dem Formular zwecks Bearbeitung Ihrer Anfrage
-            und für mögliche Anschlussfragen gespeichert.
+            Auf unserer Website besteht die Möglichkeit, uns über WhatsApp
+            zu kontaktieren.
           </p>
 
           <p className="leading-relaxed text-gray-700">
-            Verarbeitet werden insbesondere:
+            Bei Nutzung von WhatsApp werden personenbezogene Daten an
+            WhatsApp Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland,
+            übermittelt.
+          </p>
+
+          <p className="leading-relaxed text-gray-700">
+            WhatsApp kann Daten auch in Drittländer außerhalb der EU übertragen.
+          </p>
+
+          <p className="leading-relaxed text-gray-700">
+            Die Nutzung erfolgt freiwillig. Rechtsgrundlage ist Art. 6 Abs. 1
+            lit. a DSGVO sowie Art. 6 Abs. 1 lit. b DSGVO.
+          </p>
+        </section>
+
+        {/* SECTION */}
+        <section className="mt-12 space-y-5">
+          <h2 className="text-2xl font-bold text-black">
+            5. Cookies
+          </h2>
+
+          <p className="leading-relaxed text-gray-700">
+            Unsere Website kann Cookies verwenden. Cookies sind kleine
+            Textdateien, die auf Ihrem Endgerät gespeichert werden.
+          </p>
+
+          <p className="leading-relaxed text-gray-700">
+            Technisch notwendige Cookies werden auf Grundlage von
+            Art. 6 Abs. 1 lit. f DSGVO gespeichert.
+          </p>
+
+          <p className="leading-relaxed text-gray-700">
+            Nicht notwendige Cookies (z. B. für Analyse) werden nur nach
+            Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO gesetzt.
+          </p>
+        </section>
+
+        {/* SECTION */}
+        <section className="mt-12 space-y-5">
+          <h2 className="text-2xl font-bold text-black">
+            6. Google Analytics (falls aktiv)
+          </h2>
+
+          <p className="leading-relaxed text-gray-700">
+            Diese Website nutzt Google Analytics, einen Webanalysedienst
+            der Google Ireland Limited, Gordon House, Dublin 4, Irland.
+          </p>
+
+          <p className="leading-relaxed text-gray-700">
+            Google Analytics verarbeitet unter anderem:
           </p>
 
           <ul className="list-disc space-y-2 pl-6 text-gray-700">
-            <li>Name</li>
-            <li>Telefonnummer</li>
-            <li>E-Mail-Adresse</li>
-            <li>Nachricht</li>
+            <li>Nutzungsdaten</li>
+            <li>Seitenaufrufe</li>
+            <li>gekürzte IP-Adresse</li>
+            <li>Geräteinformationen</li>
           </ul>
 
           <p className="leading-relaxed text-gray-700">
-            Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. b DSGVO
-            zur Bearbeitung Ihrer Anfrage.
+            Die Verarbeitung erfolgt ausschließlich nach Einwilligung
+            über ein Cookie-Banner gemäß Art. 6 Abs. 1 lit. a DSGVO.
           </p>
 
+          <p className="leading-relaxed text-gray-700">
+            Die Einwilligung kann jederzeit widerrufen werden.
+          </p>
         </section>
 
         {/* SECTION */}
         <section className="mt-12 space-y-5">
-
           <h2 className="text-2xl font-bold text-black">
-            5. Terminbuchung
+            7. Speicherdauer
           </h2>
 
           <p className="leading-relaxed text-gray-700">
-            Über unsere Website können Termine angefragt oder gebucht werden.
-            Dabei werden personenbezogene Daten verarbeitet, die zur
-            Terminvereinbarung erforderlich sind.
+            Personenbezogene Daten werden nur so lange gespeichert,
+            wie dies für den jeweiligen Zweck erforderlich ist oder
+            gesetzliche Aufbewahrungsfristen bestehen.
           </p>
-
-          <p className="leading-relaxed text-gray-700">
-            Hierzu gehören insbesondere:
-          </p>
-
-          <ul className="list-disc space-y-2 pl-6 text-gray-700">
-            <li>Vor- und Nachname</li>
-            <li>Telefonnummer</li>
-            <li>E-Mail-Adresse</li>
-            <li>gewünschter Termin</li>
-            <li>Angaben zur gewünschten Dienstleistung</li>
-          </ul>
-
-          <p className="leading-relaxed text-gray-700">
-            Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.
-          </p>
-
         </section>
 
         {/* SECTION */}
         <section className="mt-12 space-y-5">
-
           <h2 className="text-2xl font-bold text-black">
-            6. Speicherdauer
-          </h2>
-
-          <p className="leading-relaxed text-gray-700">
-            Ihre personenbezogenen Daten werden nur so lange gespeichert,
-            wie dies zur Bearbeitung Ihrer Anfrage oder zur Erfüllung
-            gesetzlicher Aufbewahrungspflichten erforderlich ist.
-          </p>
-
-        </section>
-
-        {/* SECTION */}
-        <section className="mt-12 space-y-5">
-
-          <h2 className="text-2xl font-bold text-black">
-            7. Ihre Rechte nach DSGVO
+            8. Rechte der betroffenen Personen
           </h2>
 
           <p className="leading-relaxed text-gray-700">
@@ -190,53 +198,49 @@ export default function DatenschutzPage() {
             <li>Löschung Ihrer Daten</li>
             <li>Einschränkung der Verarbeitung</li>
             <li>Datenübertragbarkeit</li>
-            <li>Widerruf einer erteilten Einwilligung</li>
-            <li>Beschwerde bei einer zuständigen Datenschutzaufsichtsbehörde</li>
+            <li>Widerruf einer Einwilligung</li>
+            <li>Beschwerde bei einer Datenschutzaufsichtsbehörde</li>
           </ul>
-
         </section>
 
         {/* SECTION */}
         <section className="mt-12 space-y-5">
-
           <h2 className="text-2xl font-bold text-black">
-            8. SSL- bzw. TLS-Verschlüsselung
+            9. Beschwerderecht
           </h2>
 
           <p className="leading-relaxed text-gray-700">
-            Diese Website nutzt aus Sicherheitsgründen und zum Schutz
-            vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung.
+            Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde
+            zu beschweren.
           </p>
-
         </section>
 
         {/* SECTION */}
         <section className="mt-12 space-y-5">
-
           <h2 className="text-2xl font-bold text-black">
-            9. Widerspruch gegen Werbe-E-Mails
+            10. SSL-/TLS-Verschlüsselung
           </h2>
 
           <p className="leading-relaxed text-gray-700">
-            Der Nutzung der im Rahmen der Impressumspflicht veröffentlichten
-            Kontaktdaten zur Übersendung nicht ausdrücklich angeforderter Werbung
-            wird hiermit widersprochen.
+            Diese Website nutzt aus Sicherheitsgründen eine SSL-/TLS-Verschlüsselung.
           </p>
 
+          <p className="leading-relaxed text-gray-700">
+            Eine verschlüsselte Verbindung erkennen Sie an „https://“
+            in der Browserzeile.
+          </p>
         </section>
 
         {/* SECTION */}
         <section className="mt-12 space-y-5">
-
           <h2 className="text-2xl font-bold text-black">
-            10. Änderungen dieser Datenschutzerklärung
+            11. Änderungen
           </h2>
 
           <p className="leading-relaxed text-gray-700">
             Wir behalten uns vor, diese Datenschutzerklärung anzupassen,
-            damit sie stets den aktuellen rechtlichen Anforderungen entspricht.
+            damit sie stets den aktuellen gesetzlichen Anforderungen entspricht.
           </p>
-
         </section>
 
       </div>
